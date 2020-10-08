@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-start;
+}
+
+/* Center content horizontally and vertically */
+#submit-button, .complete-option, .delete-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    background-color: peachpuff;
+    width: 600px;
+    padding: 0 10px 15px 10px;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px 0 5px 0;
+}
+
+.add-new-item {
+    display: flex;
+    margin-bottom: 10px;
+    height: 2.2em;
+    width: 100%;
+}
+
+#textBox {
+    width: 100%;
+    border: 0;
+    padding-left: 10px;
+    border-radius: 20px 0 0 20px;
+}
+
+#submit-button {
+    background-color: rgba(221, 220, 220);
+    width: 20%;
+    cursor: pointer;
+    color: gray;
+    border-radius: 0 20px 20px 0;
+}
+
+#submit-button:hover {
+    color: rgba(221, 220, 220);
+    background-color: gray;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .todo-item:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.todo-item:last-child {
+    border-radius: 0 0 10px 10px;
+} */
+
+.todo-item:nth-child(even) {
+    background-color: lightgray;
+}
+
+.todo-item:nth-child(odd) {
+    background-color: rgb(192, 192, 192);
+}
+
+li {
+    padding: 10px;
+    flex: 1;
+}
+
+.complete-option, .delete-option {
+    width: 3.5em;
+    cursor: pointer;
+}
+
+.complete-option:hover {
+    background-color: rgba(0, 128, 0, .5);
+}
+
+.delete-option:hover {
+    background-color: rgb(255, 0, 0, .5);
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
